@@ -1,1 +1,1 @@
-console.log("JavaScript Carregado com Sucesso!");
+AOS.init();

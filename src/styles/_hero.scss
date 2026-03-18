@@ -1,0 +1,51 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/Hero_Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute; // Posição Absoluta da imagem
+        top: 0; // Posição do topo da imagem
+        left: 0; // Posição da esquerda da imagem
+        width: 100%; // Largura da imagem de fundo para ocupar 100% do container
+        height: 100%; // Altura da imagem de fundo para ocupar 100% do container
+    }
+
+    &__text { // estilização do paragrafo com classe text dentro do header
+    margin: 64px auto;      // Centraliza o bloco e mantém os respiros
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;        // Tamanho que você já ajustou (perfeito!)
+    line-height: 1.1;       // Diminuí um pouco pra frase não ficar "esparramada"
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+    max-width: 800px;       // Impede que a frase ocupe a largura toda
+    text-transform: uppercase; // Opcional: Pra dar aquele tom de "grito" de motivação
+
+    @media (max-width: 768px) {
+        font-size: 18px; // Diminui pra não ocupar a tela toda
+        margin: 32px 0;
+        padding: 0 16px; // Respiro lateral pra frase não colar na borda
+    }
+    
+    }
+
+    &__logo {
+        margin: 0 auto; // Para centralizar a imagem
+        height: 240px; // Altura máxima do logo EBAC
+        display: block; // Para que o margin 0 auto centralize o logo
+    }
+
+    &__text {
+    @media (max-width: 640px) {
+        font-size: 20px; 
+        padding: 0 20px;
+    }
+}
+}

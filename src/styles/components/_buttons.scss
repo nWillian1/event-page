@@ -1,0 +1,26 @@
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1a1a1a; // Roxo clássico
+    color: #fff;
+    text-decoration: none; // Remove o sublinhado
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin-left: 10px;
+    letter-spacing: 1px; // Dá um ar muito mais chique e profissional
+
+    &:hover {
+        background-color: #333; // Escurece um pouco ao passar o mouse
+        transform: scale(1.05);    // Dá um leve "pulo"
+    }
+
+    @media (max-width: 640px) {
+            width: 100%;// Opcional: botão largo é melhor pra clicar no celular
+            max-width: 300px;  // Pra não ficar gigante
+            margin: 24px auto 0;
+    }
+
+}

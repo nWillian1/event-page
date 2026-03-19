@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;    // Alinha tudo verticalmente no meio da barra
     width: 90%;            // Faz a barra ocupar a largura total do container
-    max-width: 900px;
+    max-width: 1220px;
     margin: 40px auto 64px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -19,12 +19,12 @@
         flex-grow: 1;
 
         &__item {
-            font-size: 13px;
+            font-size: 22px;
             color: #000;
-            max-width: 220px;
+            max-width: 300px;
 
             b {
-                font-size:14px;
+                font-size:22px;
                 font-weight: bold;
                 text-transform: uppercase;
                 display: block;

@@ -4,10 +4,10 @@
     overflow-x: hidden;
 
     &--pretreino {
-        background-image: linear-gradient(#000, #1a1a1a);
+        background-image: linear-gradient(180deg, #1a110f 0%, #4e342e 100%);
         .event__image {
-            filter: drop-shadow(0 0 15px rgba(186, 218, 85, 0.6));
-            max-width: 200px;
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
+            max-width: 400px;
             margin: 0 auto;
         }
 
@@ -16,20 +16,24 @@
                 flex-direction: column;
                 text-align: center;
             }
+            .event__image {
+                max-width:300px;
+                margin: 20px auto 0;
+            }
         }
     }
     &--creatine {
-        background-image: linear-gradient(#1a1a1a, #000);
+        background-image: linear-gradient(180deg, #4e342e 100%, #1a110f 0%);
         .event__image {
             filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
         }
 
     }
     &--whey {
-        background-image: linear-gradient(#000, #1a1a1a);
+        background-image: linear-gradient(180deg, #4e342e 100%, #1a110f 0%);
         .event__image {
-        filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.5));
-        max-width: 200px;
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
+        max-width: 400px;
         margin: 0 auto;
         }
 
@@ -38,12 +42,16 @@
                 flex-direction: column;
                 text-align: center;
             }
+            .event__image {
+                max-width:300px;
+                margin: 20px auto 0;
+            }
         }
     }
     &--anabol {
-        background-image: linear-gradient(#1a1a1a, #000);
+        background-image: linear-gradient(180deg, #4e342e 100%, #1a110f 0%);
         .event__image {
-        filter: drop-shadow(0 0 18px rgba(0, 255, 255, 0.6));
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
         }
     }
     &--image-left {
@@ -67,7 +75,7 @@
     }
 
     &__image {
-        max-width: 300px;
+        max-width: 400px;
         width: 100%;
         height: auto;
         object-fit: contain;
@@ -81,17 +89,17 @@
     &__title {
         font-size: 42px;
         font-weight: 900;
-        color: #bada55;
+        color: #FFD700;
         margin-bottom: 16px;
         text-transform: uppercase;
         display: block;
     }
 
     &__description {
-        font-size: 18px;
+        font-size: 26px;
         line-height: 1.6;
         text-shadow: 0px 0px 8px rgba(0, 0, 0, 1), 0px 0px 4px rgba(0, 0, 0, 1);
-        color: #fff;
+        color: #F5F5F5;
         font-weight: 400;
         margin-top: 8px;
         display: block;
@@ -106,6 +114,8 @@
     &__image {
         width: 100%; // Ocupa a largura disponível
         margin-top: 20px; // Apenas um respiro entre o texto e o pote
+        max-width:300px;
+        margin: 20px auto 0;
     }
 
     &__details {
@@ -122,18 +132,36 @@
 }
 @media (min-width: 641px) and (max-width: 1024px) {
     .container {
+        display: flex; 
+        flex-direction: column;
         max-width: 80%; 
         margin: 0 auto; 
         padding: 0 20px; 
     }
 
     &__details {
+        width: 100%; // Ocupa a largura total do container
+        text-align: center; // Centraliza o título e a descrição
+        margin-bottom: 20px;
+
         &__title {
             font-size: 32px; 
+            text-align: center;
         }
 
         &__description {
-            font-size: 18px; 
+            font-size:28px; 
+            text-align: center;
+        }
+    }
+    &__image {
+        width: 100%;
+        max-width: 400px; 
+        margin: 0 auto; 
+
+        img { // Se tiver a tag img dentro
+            width: 100%; // Preenche a div
+            height: auto; // Mantém a proporção
         }
     }
 }

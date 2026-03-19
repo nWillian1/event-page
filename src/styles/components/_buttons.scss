@@ -1,11 +1,11 @@
 .button {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #1a1a1a; // Roxo clássico
+    background-color: #4E342E; // Roxo clássico
     color: #fff;
     text-decoration: none; // Remove o sublinhado
     font-weight: bold;
-    font-size: 13px;
+    font-size: 20px;
     border-radius: 4px;
     transition: all 0.3s ease;
     text-transform: uppercase;
@@ -13,7 +13,9 @@
     letter-spacing: 1px; // Dá um ar muito mais chique e profissional
 
     &:hover {
-        background-color: #333; // Escurece um pouco ao passar o mouse
+        background-color: #EDE6D6; // Escurece um pouco ao passar o mouse
+        font-weight: bold;
+        color: #000;
         transform: scale(1.05);    // Dá um leve "pulo"
     }
 

@@ -2,7 +2,7 @@ AOS.init({
     duration: 1200, 
         once: false,      
         easing: 'ease-out-back',
-        offset: 200,
+        offset: 400,
 });
 
 const dataDoEvento = new Date("Sep 07, 2026 14:00:00"); // Variavel do tipo data para a Data do evento

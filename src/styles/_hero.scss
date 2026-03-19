@@ -10,36 +10,46 @@
     }
 
     &::before {
-        position: absolute; // Posição Absoluta da imagem
-        top: 0; // Posição do topo da imagem
-        left: 0; // Posição da esquerda da imagem
-        width: 100%; // Largura da imagem de fundo para ocupar 100% do container
-        height: 100%; // Altura da imagem de fundo para ocupar 100% do container
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
     }
 
-    &__text { // estilização do paragrafo com classe text dentro do header
-    margin: 64px auto;      // Centraliza o bloco e mantém os respiros
+    &__text { 
+    margin: 64px auto;     
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;        // Tamanho que você já ajustou (perfeito!)
-    line-height: 1.1;       // Diminuí um pouco pra frase não ficar "esparramada"
+    font-size: 24px;      
+    line-height: 1.1;       
     font-weight: 800;
     text-align: center;
     color: #fff;
-    max-width: 800px;       // Impede que a frase ocupe a largura toda
-    text-transform: uppercase; // Opcional: Pra dar aquele tom de "grito" de motivação
+    max-width: 800px;       
+    text-transform: uppercase; 
+
+    #contador {
+        color: #b3df2d; 
+        margin-top: 15px;
+        display: block;
+        font-weight: bold;
+        font-size: 1.2em;
+        text-shadow: 0 0 8px rgba(179, 223, 45, 0.8), 
+                0 0 20px rgba(179, 223, 45, 0.4);
+    }
 
     @media (max-width: 768px) {
-        font-size: 18px; // Diminui pra não ocupar a tela toda
+        font-size: 18px; 
         margin: 32px 0;
-        padding: 0 16px; // Respiro lateral pra frase não colar na borda
+        padding: 0 16px; 
     }
     
     }
 
     &__logo {
-        margin: 0 auto; // Para centralizar a imagem
-        height: 240px; // Altura máxima do logo EBAC
-        display: block; // Para que o margin 0 auto centralize o logo
+        margin: 0 auto; 
+        height: 240px; 
+        display: block; 
     }
 
     &__text {
@@ -47,5 +57,5 @@
         font-size: 20px; 
         padding: 0 20px;
     }
-}
+    }
 }
